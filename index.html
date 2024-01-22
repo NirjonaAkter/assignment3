@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Hockeys</title>
         <!-- tailwind Daisy -->
         <link
             href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
@@ -56,7 +56,7 @@
                             </div>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Home</a></li>
+                                <li><a><span class="text-color-primary">Home</span></a></li>
                                 <li><a>About</a></li>
                                 <li><a>Pages</a></li>
                                 <li><a>Blog</a></li>
@@ -64,11 +64,11 @@
                             </ul>
                         </div>
                         <a class="btn btn-ghost text-xl">Hockey <span
-                                class="color-primary">'</span>s</a>
+                                class="text-color-primary">’</span>s</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
-                            <li><a>Home</a></li>
+                            <li><a><span class="text-color-primary">Home</span></a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -81,9 +81,96 @@
                     </div>
                 </div>
             </nav>
+            <!-- slider or carousel -->
+            <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="flex flex-col lg:flex-row gap-16 p-4 lg:p-24">
+                    <div class="flex-1">
+                        <img src="Images/1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                 <!--slide2  -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row gap-16 p-4 lg:p-24">
+                        <div class="flex-1">
+                            <img src="Images/1.png" alt="">
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>        
+              </div>
         </header>
         <main>
-
+            <!-- Professional Hockeys Club -->
+            <section class="my-24">
+                <hr>
+                <div>
+                    <h3 class="text-5xl mb-12  font-semibold text-center">Professional Hockeys Club</h3>
+                <p class="text-center">The Toronto Maple Leafs are a professional ice hockey team based  <br>in Toronto, Canada, competing in the National Hockey League (NHL).</p>
+                </div>
+                <hr>
+                <!--1 review section -->
+                <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="card  bg-base-100 p-9 ">
+                        <figure><div class="radial-progress text-primary" style="--value:87;" role="progressbar">87%</div></figure>
+                        <div class="card-body">
+                            <div class="text-center space-y-4 mt-4">
+                                <h4 class="text-sm font-semibold ">Prayer Facility</h4>
+                              </div>
+                          <p class="text-center">A serene space for spiritual reflection and prayer.</p>
+                        </div>
+                      </div>
+                      <!-- second review -->
+                      <div class="card  bg-base-100 p-9 ">
+                        <figure><div class="radial-progress" style="--value:95;" role="progressbar">95%</div></figure>
+                        <div class="card-body">
+                            <div class="text-center space-y-4 mt-4">
+                                <h4 class="text-sm font-semibold ">Experienced Coach</h4>
+                              </div>
+                          <p class="text-center">Empowering individuals to unlock their full potential through personalized guidance and strategic mindset shifts.</p>
+                        </div>
+                      </div>
+                      <!-- 3rd review -->
+                      <div class="card  bg-base-100 p-9 ">
+                        <figure><div class="radial-progress text-secondary" style="--value:90;" role="progressbar">90%</div></figure>
+                        <div class="card-body">
+                            <div class="text-center space-y-4 mt-4">
+                                <h4 class="text-sm font-semibold ">Senior Player</h4>
+                              </div>
+                          <p class="text-center">Experienced player with a wealth of knowledge and skills, bringing invaluable leadership to the team.</p>
+                        </div>
+                      </div>
+                      <!-- 4th review -->
+                      <div class="card  bg-base-100 p-9 ">
+                        <figure><div class="radial-progress text-accent" style="--value:80;" role="progressbar">80%</div></figure>
+                        <div class="card-body">
+                            <div class="text-center space-y-4 mt-4">
+                                <h4 class="text-sm font-semibold ">Training Ground</h4>
+                              </div>
+                          <p class="text-center">Training ground, where skills are honed and potential is unleashed in the pursuit of excellence.</p>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <!-- Clients Question -->
+            <section class="my-24">
+                <hr>
+                <div>
+                    <h3 class="text-5xl mb-12  font-semibold text-center">Program Sections</h3>
+                <p class="text-center">In hockey, the game is divided into three sections called periods, each lasting 20 minutes in regular play, with breaks in between.</p>
+                </div>
+                <hr>
+            </section>
+            
         </main>
 
     </body>
